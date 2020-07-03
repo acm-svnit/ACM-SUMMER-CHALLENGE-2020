@@ -318,7 +318,7 @@
 <p><a href="https://www.hackerearth.com/problem/algorithm/alice-and-bob-3-6b0002de/">Alice and Bob</a></p>
 </td>
 <td width="147">
-<p><a href="https://github.com/acm-svnit/ACM-SUMMER-CHALLENGE-2020/blob/master/Solution%20by%20JITENDRA/Alice%20and%20Bob.cpp">Solution1</a><br /> Solution2</p>
+<p><a href="https://github.com/acm-svnit/ACM-SUMMER-CHALLENGE-2020/blob/master/Solution%20by%20JITENDRA/Alice%20and%20Bob.cpp">Solution1</a><br /> </p>
 </td>
 </tr>
 <tr>
@@ -327,7 +327,7 @@
 </td>
 <td width="147">
 <p><a href="https://github.com/acm-svnit/ACM-SUMMER-CHALLENGE-2020/blob/master/Solution%20by%20JITENDRA/Survival%20test.cpp">Solution1</a></p>
-<p>Solution2</p>
+<p>&nbsp;</p>
 </td>
 </tr>
 </tbody>
@@ -353,7 +353,7 @@
 <p><a href="https://www.hackerearth.com/problem/algorithm/to-do-2-1c37e2f0/">Ender&rsquo;s Game</a></p>
 </td>
 <td width="147">
-<p><a href="https://github.com/acm-svnit/ACM-SUMMER-CHALLENGE-2020/blob/master/Solution%20by%20JITENDRA/Ender's%20Game.cpp">Solution1</a><br /> Solution2</p>
+<p><a href="https://github.com/acm-svnit/ACM-SUMMER-CHALLENGE-2020/blob/master/Solution%20by%20JITENDRA/Ender's%20Game.cpp">Solution1</a><br /> </p>
 </td>
 </tr>
 <tr>
@@ -387,7 +387,7 @@
 <p><a href="https://www.hackerearth.com/problem/algorithm/luffys-food-obsession-6b432a8b/">Luffy&rsquo;s Food Obsession</a></p>
 </td>
 <td width="147">
-<p><a href="https://github.com/acm-svnit/ACM-SUMMER-CHALLENGE-2020/blob/master/Solution%20by%20JITENDRA/Luffy's%20Food%20Obsession.cpp">Solution1</a><br /> Solution2</p>
+<p><a href="https://github.com/acm-svnit/ACM-SUMMER-CHALLENGE-2020/blob/master/Solution%20by%20JITENDRA/Luffy's%20Food%20Obsession.cpp">Solution1</a><br /> </p>
 </td>
 </tr>
 <tr>
@@ -395,7 +395,7 @@
 <p><a href="https://www.hackerearth.com/problem/algorithm/gogi-0d8fa084/">Gogi</a></p>
 </td>
 <td width="147">
-<p><a href="https://github.com/acm-svnit/ACM-SUMMER-CHALLENGE-2020/blob/master/Solution%20by%20JITENDRA/Gogi.cpp">Solution1</a><br /> Solution2</p>
+<p><a href="https://github.com/acm-svnit/ACM-SUMMER-CHALLENGE-2020/blob/master/Solution%20by%20JITENDRA/Gogi.cpp">Solution1</a><br /> </p>
 </td>
 </tr>
 <tr>
