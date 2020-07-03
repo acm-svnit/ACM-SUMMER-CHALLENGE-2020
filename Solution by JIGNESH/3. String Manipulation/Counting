@@ -1,0 +1,22 @@
+/*
+* Author : jignesh1604
+* Link  : https://www.hackerearth.com/problem/algorithm/counting-1-10eada9b/
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+    long long int t;
+    cin >> t;
+    while(t-- > 0) {
+        long long int n , i , ans = 0;
+        string s;
+        cin >> n >> s;
+        for(i = 0 ; i < s.size() ; i++) {
+            if(s[i] == 'a' || s[i] == 'e' || s[i] == 'i' || s[i] == 'o' || s[i] == 'u' || s[i] == 'A' || s[i] == 'E' || s[i] == 'I' || s[i] == 'O' || s[i] == 'U') {
+                ans += (n-i)*(i+1);
+            }
+        }
+        cout << ans << "\n";
+    }
+}

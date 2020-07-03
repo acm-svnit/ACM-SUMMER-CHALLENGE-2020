@@ -1,0 +1,58 @@
+/*
+* Author : jignesh1604
+* Link  : https://www.hackerearth.com/practice/algorithms/dynamic-programming/introduction-to-dynamic-programming-1/practice-problems/algorithm/the-chocolate-boy-738c799b/
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+long long int dp[1005][1005][2];
+long long int fun(long long int sweet[] , long long int price[] , char type[] , long long int n , long long int m , long long int x) {
+    if(dp[n][m][x] != -1) {
+        return dp[n][m][x];
+    }
+    if(m <= 0 || n == 0) {
+        return 0;
+    }
+    if(type[n-1] == 'H') {
+        return dp[n][m][x] = fun(sweet , price , type , n-1 , m , x);
+    }
+    else {
+        if(x == 1) {
+            if(sweet[n-1] > m) {
+                return dp[n][m][x] = fun(sweet , price , type , n-1 , m , x);
+            }
+            else {
+                return dp[n][m][x] = max(price[n-1] + fun(sweet , price , type , n-1 , m-sweet[n-1] , x) , fun(sweet , price , type , n-1 , m , x));
+            }
+        }
+        else {
+            if(sweet[n-1] > m) {
+                if(sweet[n-1]/2 > m) {
+                    return dp[n][m][x] = fun(sweet , price , type , n-1 , m , x);
+                }
+                else {
+                    return dp[n][m][x] = max(price[n-1] + fun(sweet , price , type , n-1 , m-(sweet[n-1]/2) , 1) , fun(sweet , price , type , n-1 , m , x));
+                }
+            }
+            else {
+                long long int p = fun(sweet , price , type , n-1 , m , x);
+                long long int q = price[n-1] + fun(sweet , price , type , n-1 , m-(sweet[n-1]/2) , 1);
+                long long int r = price[n-1] + fun(sweet , price , type , n-1 , m-sweet[n-1] , 0);
+                return dp[n][m][x] = max({p , q , r});
+            }
+        }
+    }
+}
+
+int main() {
+    memset(dp , -1 , sizeof(dp));
+    long long int n , i , j , m;
+    cin >> n >> m;
+    string s;
+    long long int price[n+1] , sweet[n+1];
+    char type[n+1];
+    for(i = 0 ; i < n ; i++) {
+        cin >> s >> type[i] >> sweet[i] >> price[i];
+    }
+    cout << fun(sweet , price , type , n , m , 0) << "\n";
+}

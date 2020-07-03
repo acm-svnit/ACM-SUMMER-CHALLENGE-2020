@@ -1,0 +1,56 @@
+/**
+ * @author jignesh1604
+ * Link : https://www.hackerearth.com/problem/algorithm/is-lower_bound-possible-2-8aa526f9/
+ */
+
+#pragma comment(linker, "/stack:200000000")
+#pragma GCC optimize("Ofast")
+#pragma GCC target("sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,tune=native")
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+class C2GoodNumbersHardVersion {
+public:
+	void solve(std::istream& in, std::ostream& out) {
+	    int q;
+	    in >> q;
+	    while(q-- > 0) {
+	        long long int n , i , pos2 = -1;
+	        in >> n;
+	        vector<long long int> v;
+	        while(n > 0) {
+	            v.push_back(n%3);
+	            if(v.back() == 2) pos2 = v.size()-1;
+	            n /= 3;
+	        }
+	        v.push_back(0);
+	        if(pos2 != -1) {
+	            long long int pos0 = find(v.begin() + pos2 , v.end() , 0) - v.begin();
+	            v[pos0] = 1;
+	            for(i = pos0 - 1 ; i >= 0 ; i--) {
+	                v[i] = 0;
+	            }
+	        }
+	        long long int ans = 0;
+	        long long int pw = 1;
+	        for(i = 0 ; i < v.size() ; i++) {
+	            ans += pw*v[i];
+	            pw = pw*3;
+	        }
+	        out << ans << "\n";
+	    }
+	}
+};
+
+
+int main() {
+	C2GoodNumbersHardVersion solver;
+	std::ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+	std::istream& in(std::cin);
+	std::ostream& out(std::cout);
+	solver.solve(in, out);
+	return 0;
+}

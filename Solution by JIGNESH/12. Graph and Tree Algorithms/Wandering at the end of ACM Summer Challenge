@@ -1,0 +1,61 @@
+/*
+ * Author   :   jignesh1604
+ * Link : https://www.hackerearth.com/problem/algorithm/wandering-at-the-end-of-acm-summer-challenge-5574cd48/
+ */
+
+
+#include<bits/stdc++.h>
+using namespace std;
+#define FAST ios_base::sync_with_stdio(false), cin.tie(0), cout.tie(0);
+
+#define pb push_back
+#define sz size()
+#define ff first
+#define ss second
+#define ll long long int
+#define ld long double
+#define bp __builtin_popcountll
+#define FOR(i,a,b) for(i=a;i<b;i++)
+#define ROR(i,a,b) for(i=a;i>b;i--)
+#define FORE(i,a,b) for(i=a;i<=b;i++)
+#define RORE(i,a,b) for(i=a;i>=b;i--)
+#define pii pair<int,int>
+#define pll pair<ll,ll>
+const int M=1e9+7;
+
+vector<vector<ll>> adj;
+vector<bool> visited;
+vector<ll> v;
+
+int main()
+{
+    FAST;
+    ll n, m ,i ,j , x , y;
+    cin >> n >> m;
+    adj=vector<vector<ll>> (n+1);
+    visited = vector<bool> (n+1);
+    FOR(i,0,m)
+    {
+        cin >> x >> y;
+        adj[x].pb(y);
+        adj[y].pb(x);
+    }
+    set<ll> st;
+    st.insert(1);
+    while(!st.empty())
+    {
+        ll p = *st.begin();
+        st.erase(st.begin());
+        if(!visited[p])
+            v.pb(p);
+            FOR(i,0,adj[p].sz)
+            {
+                if(!visited[adj[p][i]]){
+                    st.insert(adj[p][i]);
+                }
+            }
+        visited[p] = true;
+    }
+    FOR(i,0,v.sz)
+        cout << v[i] << " ";
+}

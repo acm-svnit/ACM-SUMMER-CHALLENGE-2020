@@ -1,0 +1,34 @@
+/*
+* Author : jignesh1604
+* Link  : https://www.hackerearth.com/problem/algorithm/ancient-problems-require-modern-solutionseasy-version-e2cacd36/
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+    long long int n , q , i , j , d , k , l , r;
+    cin >> n >> q;
+    long long int a[n+1];
+    map<long long int , vector<long long int>> mp;
+    for(i = 1 ; i <= n ; i++) {
+        cin >> a[i];
+        mp[a[i]].push_back(i);
+    }
+    long long int pre[n+2];
+    pre[0] = 0;
+    for(i = 1 ; i <= n ; i++) {
+        pre[i] = pre[i-1] + a[i];
+    }
+    while(q-- > 0) {
+        cin >> d >> k >> l >> r;
+        l = lower_bound(mp[d].begin() , mp[d].end() , l) - mp[d].begin();
+        r = upper_bound(mp[d].begin() , mp[d].end() , r) - mp[d].begin() - 1;
+        if(mp[d].size() == 0 || r-l+1 < k) {
+            cout << -1 << "\n";
+        }
+        else {
+            cout << mp[d][l+k-1] << "\n";
+        }
+        // cout << l << " " << r << "\n";
+    }
+}

@@ -1,0 +1,64 @@
+/**
+ * @author jignesh1604
+ * Link : https://www.hackerearth.com/problem/algorithm/house-painting-1-f3d3b8ba/
+ */
+
+#pragma comment(linker, "/stack:200000000")
+#pragma GCC optimize("Ofast")
+#pragma GCC target("sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,tune=native")
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+class BPrintCheck {
+public:
+    void solve(std::istream& in, std::ostream& out) {
+        long long int n , m, i , j , k , a , b , c ;
+        in >> n >> m >> k ;
+        map<long long int,pair<long long int,long long int>> mp1 , mp2 ;
+        for(i = 0; i < k ; i++) {
+            in >> a >> b >> c ;
+            if(a == 1) {
+                mp1[b] = {c , i};
+            }
+            else {
+                mp2[b] = {c , i};
+            }
+        }
+        for(i = 1 ; i <= n ; i++ ) {
+            for(j = 1 ; j <= m ; j++) {
+                if(mp1[i].first == 0 && mp2[j].first == 0) {
+                    out << 0 << " " ;
+                }
+                else if(mp1[i].first == 0) {
+                    out << mp2[j].first<< " " ;
+                }
+                else if(mp2[j].first == 0) {
+                    out << mp1[i].first << " " ;
+                }
+                else {
+                    if(mp1[i].second > mp2[j].second) {
+                        out << mp1[i].first << " " ;
+                    }
+                    else {
+                        out << mp2[j].first << " " ;
+                    }
+                }
+            }
+            out << "\n";
+        }
+
+    }
+};
+
+
+int main() {
+    BPrintCheck solver;
+    std::ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    std::istream& in(std::cin);
+    std::ostream& out(std::cout);
+    solver.solve(in, out);
+    return 0;
+}
