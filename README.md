@@ -430,7 +430,7 @@
 <p><a href="https://www.hackerearth.com/problem/algorithm/gotta-catch-em-all-3-c97f5dca/">Gotta Catch &lsquo;Em All!</a></p>
 </td>
 <td width="147">
-<p><a href="https://github.com/acm-svnit/ACM-SUMMER-CHALLENGE-2020/blob/master/Solution%20by%20JITENDRA/Gotta%20Catch%20'Em%20All%20!.cpp">Solution1</a><br /> Solution2</p>
+<p><a href="https://github.com/acm-svnit/ACM-SUMMER-CHALLENGE-2020/blob/master/Solution%20by%20JITENDRA/Gotta%20Catch%20'Em%20All%20!.cpp">Solution1</a><br /> </p>
 </td>
 </tr>
 <tr>
@@ -438,7 +438,7 @@
 <p><a href="https://www.hackerearth.com/problem/algorithm/find-pattern-e60ce74b/">Find Pattern</a></p>
 </td>
 <td width="147">
-<p><a href="https://github.com/acm-svnit/ACM-SUMMER-CHALLENGE-2020/blob/master/Solution%20by%20JITENDRA/Find%20pattern.cpp">Solution1</a><br /> Solution2</p>
+<p><a href="https://github.com/acm-svnit/ACM-SUMMER-CHALLENGE-2020/blob/master/Solution%20by%20JITENDRA/Find%20pattern.cpp">Solution1</a><br /> </p>
 </td>
 </tr>
 <tr>
@@ -447,7 +447,7 @@
 </td>
 <td width="147">
 <p><a href="https://github.com/acm-svnit/ACM-SUMMER-CHALLENGE-2020/blob/master/Solution%20by%20JITENDRA/Maximize%20the%20operation.cpp">Solution1</a></p>
-<p>Solution2</p>
+<p>&nbsp;</p>
 </td>
 </tr>
 <tr>
@@ -498,7 +498,7 @@
 </td>
 <td width="147">
 <p><a href="https://github.com/acm-svnit/ACM-SUMMER-CHALLENGE-2020/blob/master/Solution%20by%20JITENDRA/Loki%20and%20the%20Tesseract.cpp">Solution1</a></p>
-<p>Solution2</p>
+<p>&nbsp;</p>
 </td>
 </tr>
 </tbody>
@@ -524,7 +524,7 @@
 <p><a href="https://www.hackerearth.com/problem/algorithm/very-easy-2-9ac725eb/">Very Easy</a></p>
 </td>
 <td width="147">
-<p><a href="https://github.com/acm-svnit/ACM-SUMMER-CHALLENGE-2020/blob/master/Solution%20by%20JITENDRA/Very%20easy.cpp">Solution1</a><br /> Solution2</p>
+<p><a href="https://github.com/acm-svnit/ACM-SUMMER-CHALLENGE-2020/blob/master/Solution%20by%20JITENDRA/Very%20easy.cpp">Solution1</a><br /> </p>
 </td>
 </tr>
 <tr>
@@ -532,7 +532,7 @@
 <p><a href="https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/practice-problems/algorithm/the-big-news-64c8dcee/">The Big News</a></p>
 </td>
 <td width="147">
-<p><a href="https://github.com/acm-svnit/ACM-SUMMER-CHALLENGE-2020/blob/master/Solution%20by%20JITENDRA/The%20Big%20News.cpp">Solution1</a><br /> Solution2</p>
+<p><a href="https://github.com/acm-svnit/ACM-SUMMER-CHALLENGE-2020/blob/master/Solution%20by%20JITENDRA/The%20Big%20News.cpp">Solution1</a><br /> </p>
 </td>
 </tr>
 <tr>
